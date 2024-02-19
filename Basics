@@ -1,0 +1,46 @@
+VARIABLES:
+
+1.a=10
+  b=20
+  c=a+b
+  print(c)
+
+output:-
+   30
+
+2.a="10"
+  b="20"                                                str+str=str
+  c=a+b                                                  10+20=1020
+  print(c)
+
+output:-
+   1020                                            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
