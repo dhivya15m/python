@@ -14,7 +14,370 @@ output:-
   print(c)
 
 output:-
-   1020                                            
+   1020     
+
+"" represent String
+"10" considers as Word
+
+Casting=Converting one datatype into another datatype
+a="10"--->a=int("10")
+"10" string-->int("10")=10
+
+3.a=int("10")
+  b=int("20")
+  c=a+b
+  print(c)
+
+output:-
+    10+20=30
+
+USER INPUT:-
+
+  a=input()
+  b=input()                                            where input()--->take it as string.Suppose we are giving 10 as 'a' value.It will take it as string.
+  c=a+b                                                Eg:- a="10"
+  print(c)
+
+output:-
+  a=10 }--->take it as string
+  b=20}---->    "
+  c=1020
+
+  a=int(input())
+  b=int(input())
+  c=a+b
+  print(c)
+
+output:-
+   a=10
+   b=20
+   c=10+20=30
+
+EXAMPLES:-
+
+1.Get input for variable name and age.Print it.
+
+   name=input()
+   age=input()
+   print("My name is:",name)
+   print("My age is:",age)
+
+output:-
+  My name is Shivanya
+  My age is 2
+
+2.Get input for variable name,age and address.Print it.
+
+   name=input()
+   age=input()
+   address=input()
+   print("My name is:",name)
+   print("My age is:",age)
+   print("My address is:",address)
+
+output:-
+  My name is Shivanya
+  My age is 2
+  My address is Tindivanam
+
+3.Get integer input for variable a,b,c. Multiply all 3 variables.(a*b*c)
+  Add all 3 variables.(a+b+c)
+  Divide the multiplied values by added values. Print result.
+
+   a=int(input())
+   b=int(input())
+   c=int(input())
+   d=a*b*c
+   e=a+b+c
+   f=d/e
+   print("f")
+
+output:-
+   a=2        d=2*3*4=24
+   b=3        e=2+3+4=9
+   c=4        f=24/9=2.66666666...
+
+4.Get input for variable name,score and department. Get score for 100,divide 100/10.
+
+   name=input()
+   score=input()
+   department=input()
+   print("My name is",name)
+   print("My score is",score/10,"/10")
+   print("My department is",department)
+
+output:-
+    My name is Shivanya
+    My score is 9.8/10
+    My deepartment is Computer
+
+IF ELSE WITH BOOLEAN:-
+
+Syntax:-  
+    if(true):                                          
+        print("yes")                                                                  (yes,no=Boolean values)
+    else:
+        print("no")
+o/p:-
+    yes
+
+    if(false):                                          
+        print("yes")                                                                  
+    else:
+        print("no")
+o/p:-
+    no
+
+IF ELSE WITH COMPARISON:-
+
+print("win"=="win") ----> o/p:- true
+print("win"=="winn") -----> o/p:- false
+
+RCB=="win                                                   
+if(RCB=="win")                                             
+  print("The cup is ours")
+else:
+  print("The cup is not ours")
+
+o/p:- 
+    The cup is ours
+
+EXAMPLES:-
+
+1.Get user input for variable Rosy, if rosy==died. Print "Surya meets Priya" else "Surya wds Rosy".
+
+Rosy=input()
+if(Rosy==died):
+   print("Surya meets Priya")
+else:
+   print("Surya weds Rosy")
+
+output:-
+Rosy=died
+Surya meets Priya
+
+2.Get input for variable mark. If mark>35 print "pass" else "fail".
+
+mark=int(input())
+if(mark>35):
+   print("Pass")
+else:
+   print("Fail")
+
+output:-
+34-->Fail
+89-->Pass
+
+3.Get input for variablle income. If income is lesser than 7000, scholarship is available else not eligible for scholarship.
+
+income=int(input("income:"))
+if(income<7000):
+  print("Scholarship is available")
+else:
+  print("Not eligible for scholarship")
+
+output:-
+income:7200
+Not eligible for scholarship
+
+4.Get input for a number and check whether it is divisible by both 3 and 5 or not. If yes, then print the number is divisible by 3 and 5 else print the number is not divisible by 3 or 5.
+
+a=int(input("a:"))
+if(a%3==0 and a%5==0):
+    print("a is divisible by both 3 and 5")
+else:
+    print("a is not divisible by 3 and 5")
+
+output:-
+a:15
+a is divisible by both 3 and 5
+a:12
+a is not divisible by both 3 and 5
+
+5.Get input for a number and find it is even or odd.
+
+a=int(input("a:"))
+if(a%2==0):
+   print("Even")
+else:
+   print("Odd")
+
+output:-
+a:5
+Odd
+a:4
+Even
+
+6.Make a mini calculator, get input for 2 numbers a and b. Get input from user whether to add/sub/mul/div. If user select add then the two numbers and print the result.
+
+a=int(input("a:"))
+b=int(input("b:"))
+c=(input("add/sub/mul/div:"))
+if(c=="add"):
+    print(a+b)
+elif(c=="sub"):
+    print(a-b)
+elif(c=="mul"):
+    print(a*b)
+elif(c=="div"):
+    print(a/b)
+else:
+    print("Invalid operation")
+
+output:-
+a:10
+b:5
+add/sub/mul/div:div
+2.0
+
+7.Get a input for score percentage. Only if the percentage is greater than 70, get input for his name,department and location, then print you're eligible else, you're not eligible.
+
+Score=int(input("Score percentage:"))
+if(Score>70):
+   input("Name:")
+   input("Department:")
+   input("Location:")
+   print("You are eligible")
+else:
+   print("You are not eligible")
+
+output:-
+Score percentage:87
+Name:Shivanya
+Department:IT
+Location:Tindivanam
+You are eligible
+
+
+FOR LOOP:-
+
+Syntax:-
+  for iterator_var in sequence:
+    statements(s)
+
+Sample:_
+
+1.for i in range(5):
+    print(i)
+
+output:-
+1
+2
+3
+4
+
+2.for i in range"apple":
+    print(i)
+'
+output:-
+a
+p
+p
+l
+e
+
+3.for i in range(0,5):
+    print(i)
+
+output:-
+0
+1
+2
+3
+4
+
+4.To print a multiplication table:-
+
+for i in range(1,11):                                             {(1,11)----> print 1 to 10}{i---> prints 1 to 10}{"x2="----> print x2 for ten times}{i*2---->Multiply the i value into 2}
+     print(i,"x2=",i*2)
+
+EXAMPLES:-
+
+1.Get input for a and b. Print the values between a and b.
+
+a=int(input("Enter a number for a:"))
+b=int(input("Enter a number for b:"))
+for i in range(a+1,b):
+       print(i)
+
+output:-
+Enter a number for a:1
+Enter a number for b:5
+2
+3
+4
+
+2.Print even numbers between 1 to 10.
+
+for i in range(1,11):
+   if(i%2==0):
+      print(i)
+
+output:-
+2
+4
+6
+8
+10
+
+3.Print the count of even numbers between 1 to 10.
+
+count=0
+for i in range(1,11):                               {output explanation:-
+    if(i%2==0):                                                  i=1--->1%2==1---->false, i=2---->2%2==0----->0=0+1=1, i=3--->3%2==1--->false.............i=10--->10%2==0--->4+1=5}       
+        count=count+1
+print(count)
+
+output:-
+5
+
+4.Count the number of even and odd numbers between 1 to 10 and print it.
+
+e_count=0
+o_count=0
+for i in range(1,11):  
+    if(i%2==0):
+       e_count=e_count+1
+    else:
+       o_count=o_count+1
+print(e_count)
+print(o_count)
+
+output:-
+5
+5
+
+5.Count the number which are divisible by both 3 and 5. Range 1-100.
+
+couunt=0
+for i in range(1,100):
+    if(i%3===0 and i%5==0):
+       count=count+1
+print(count)
+
+output:-
+6
+
+6.Write a program to compute the sum of first 5 digits using loop.
+
+sum=0
+for i in range(1,6):
+   sum=sum+i
+print(sum)
+
+output:-
+15
+  
+
+
+
+   
+
+
+
+  
+
+
 
 
 
