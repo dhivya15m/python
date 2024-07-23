@@ -133,7 +133,7 @@ IF ELSE WITH COMPARISON:-
 print("win"=="win") ----> o/p:- true
 print("win"=="winn") -----> o/p:- false
 
-RCB=="win                                                   
+RCB=="win"                                                   
 if(RCB=="win")                                             
   print("The cup is ours")
 else:
@@ -349,7 +349,7 @@ output:-
 
 5.Count the number which are divisible by both 3 and 5. Range 1-100.
 
-couunt=0
+count=0
 for i in range(1,100):
     if(i%3===0 and i%5==0):
        count=count+1
